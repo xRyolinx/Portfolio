@@ -67,6 +67,9 @@ li:hover {
 
 .button {
     border-radius: 30px;
+    padding: 7px;
+    background-color: red;
+    color: aliceblue;
 
 }
 
@@ -92,8 +95,8 @@ img {
     }
     main {
        height: 90vh;
-       margin-right: 0vw;
-       margin-left: 6vw;
+       margin-right: 5vw;
+       margin-left: 5vw;
     }
     article {
         width: 40vw !important;
@@ -122,6 +125,7 @@ img {
     }
     img {
         width: 80vw;
+        max-width: 400px;
         height: auto;
 
         margin-right: auto !important;
