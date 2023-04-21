@@ -81,11 +81,10 @@ a, a:hover {
 }
 
 img {
-    height: 60vh;
+    width: 80vw;
     margin-right: auto !important;
     margin-left: auto !important;
 }
-
 
 @media (min-width: 992px) {
     article {
@@ -108,7 +107,9 @@ img {
         height: 120vh;
     }
     img {
-        height: 60vh;
+        width: 80vw;
+        height: auto;
+
         margin-right: auto !important;
         margin-left: auto !important;
     }
