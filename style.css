@@ -115,8 +115,8 @@ img {
     nav {
         height: 8vh;
     }
-    main {
-        height: 120vh;
+    body {
+        padding-bottom: 2vh;
     }
     article {
         width: 80% !important;

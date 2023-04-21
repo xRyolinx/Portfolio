@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (i % 2 == 0)
         {
-            main.style.marginTop = '25vh';
-            home.style.marginTop = '2vh';
+            main.style.marginTop = '30vh';
+            home.style.marginTop = '4vh';
             
             i++;
         }
