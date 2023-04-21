@@ -87,6 +87,9 @@ img {
 }
 
 @media (min-width: 992px) {
+    nav {
+        height: 10vh;
+    }
     main {
        height: 90vh;
        margin-right: 0vw;
@@ -106,6 +109,9 @@ img {
 
 
 @media (max-width: 992px) {
+    nav {
+        height: 8vh;
+    }
     main {
         height: 120vh;
     }
