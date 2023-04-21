@@ -47,8 +47,8 @@ ul {
 
 li {
     margin: 0 !important;
-    border-top: 2px white solid;
-    border-bottom: 2px white solid;
+    border-top: 2px transparent solid;
+    border-bottom: 2px transparent solid;
 }
 
 li:hover {
@@ -87,24 +87,30 @@ img {
 }
 
 @media (min-width: 992px) {
-    article {
-        width: 50vw !important;
-    }
     main {
        height: 90vh;
     }
+    article {
+        width: 40vw !important;
+    }
     img {
-        height: 70vh;
+        width: 40vw;
+        height: auto;
+        
+        margin-right: auto !important;
+        margin-left: 0 !important;
     }
 }
 
 
 @media (max-width: 992px) {
-    article {
-        width: 80% !important;
-    }
     main {
         height: 120vh;
+    }
+    article {
+        width: 80% !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
     }
     img {
         width: 80vw;
@@ -112,5 +118,9 @@ img {
 
         margin-right: auto !important;
         margin-left: auto !important;
+    }
+
+    article {
+        padding-top: 0;
     }
 }
