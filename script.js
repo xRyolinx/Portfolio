@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (i % 2 == 0)
         {
             main.style.marginTop = '30vh';
-            home.style.marginTop = '4vh';
+            home.style.paddingTop = '2vh';
             
             i++;
         }
         else
         {
             main.style.marginTop = '0';
-            home.style.marginTop = '0';
+            home.style.paddingTop = '0';
             
             i++;
         }
