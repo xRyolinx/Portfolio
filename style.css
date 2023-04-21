@@ -80,6 +80,12 @@ a, a:hover {
     text-decoration: none;
 }
 
+img {
+    height: 60vh;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
 
 @media (min-width: 992px) {
     article {
