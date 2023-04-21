@@ -1,0 +1,62 @@
+/* Nav Bar */
+:root {
+    --marge: 2rem;
+}
+
+@font-face {
+    font-family: PoppinsMd;
+    src: url(Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url(Pacifico-Regular.ttf);
+}
+
+body {
+    font-family: PoppinsMd;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.navbar-brand {
+    margin: 0 40% 0 var(--marge);
+    font-family: Pacifico;
+    color: red;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+.navbar-toggler {
+    margin-right: var(--marge);
+}
+
+#menu {
+    margin-right: var(--marge);
+}
+
+ul {
+    margin-left: var(--marge);
+}
+
+li {
+    margin: 0 !important;
+}
+
+li:hover {
+    border-top: 2px red solid;
+    border-bottom: 2px red solid;
+}
+
+.nav-link {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.nav-item {
+    margin: 1rem 0 0 1rem;
+}
