@@ -89,12 +89,14 @@ img {
 @media (min-width: 992px) {
     main {
        height: 90vh;
+       margin-right: 0vw;
+       margin-left: 6vw;
     }
     article {
         width: 40vw !important;
     }
     img {
-        width: 40vw;
+        width: 32vw;
         height: auto;
         
         margin-right: auto !important;
