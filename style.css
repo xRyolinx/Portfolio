@@ -107,6 +107,8 @@ img {
         
         margin-right: auto !important;
         margin-left: 0 !important;
+        
+        border-radius: 360px;
     }
 }
 
