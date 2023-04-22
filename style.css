@@ -37,6 +37,10 @@ body {
     margin-right: var(--marge);
 }
 
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+
 #menu {
     margin-right: var(--marge);
 }
