@@ -41,4 +41,26 @@ document.addEventListener('DOMContentLoaded', function() {
             enjoy.after(bouttons);
         }
     });
+
+    // Couleur de marge sur nav
+    if (window.matchMedia("(min-width: 992px)").matches)
+    {
+        let nom = window.location.pathname;
+        if (nom == '/')
+        {
+            home = document.querySelector('#home');
+            home.style.borderTop = '2px #264653 solid';
+            home.style.borderBottom = '2px #264653 solid';
+            home.style.color = '#FFFFFF !important'
+
+        }
+        pages = document.querySelectorAll('li');
+        pages.forEach(page => {
+            if (nom.includes(page.firstChild.innerHTML))
+            {
+                alert('h');
+            }
+    
+        });
+    }
 });
