@@ -87,6 +87,7 @@ img {
     width: 80vw;
     margin-right: auto !important;
     margin-left: auto !important;
+    border-radius: 360px;
 }
 
 @media (min-width: 992px) {
@@ -107,8 +108,6 @@ img {
         
         margin-right: auto !important;
         margin-left: 0 !important;
-        
-        border-radius: 360px;
     }
 }
 

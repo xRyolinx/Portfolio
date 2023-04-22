@@ -19,4 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
             i++;
         }
     });
+    if (window.matchMedia("(max-width: 992px)").matches) {
+        let bouttons = document.querySelector('#bouttons');
+        let image = document.querySelector('#photo');
+        image.after(bouttons);
+    }
 });
