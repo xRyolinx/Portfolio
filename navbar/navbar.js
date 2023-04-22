@@ -6,7 +6,7 @@ function show_hide_nav()
     let nav_button = document.querySelector('#nav_button');
 
     // Hide add on mobile
-    if (window.matchMedia("(max-width: 768px)").matches)
+    if (window.matchMedia("(max-width: 992px)").matches)
     {
         nav_add.style.display = 'none';
         nav_button.style.display = 'block';
