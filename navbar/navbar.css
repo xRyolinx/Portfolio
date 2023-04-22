@@ -21,8 +21,7 @@
 /* Nav */
 nav {
     height:8vh;
-    height: 45px;
-    min-height: 0px;
+    min-height: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
