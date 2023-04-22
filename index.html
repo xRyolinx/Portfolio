@@ -11,65 +11,55 @@
     <!-- Custom -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <!-- Nav -->
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <script src="navbar/navbar.js"></script>
 </head>
 <body>
-    <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg" style="padding: 0;">
-      <div class="container-fluid">
-        <!-- Brand -->
-        <a href="#" class="navbar-brand">Ryolin</a>
-        <!-- Boutton -->
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Défilable -->
-        <div class="collapse navbar-collapse ms-auto" id="menu">
-          <ul class="navbar-nav justify-content-between w-100">
-            <li id="home" class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-      </div>
-    </nav>
+  <!-- Nav -->
+  <nav>
+    <a id="nav_marque" href="#">Ryolin</a>
     
-    <!-- Contenu -->
-    <main class="d-lg-flex justify-content-between p-3">
-      <!-- Presentation -->
-      <article class="d-flex flex-column justify-content-center text-center pt-lg-5">
-        <!-- Ecriture -->
-        <h3><em>HELLO</em></h3>
-        <h1>I'm Rabia Manil, a&nbsp;CS&nbsp;Student.</h1>
-        <p>This is my portfolio website, where you will find all the necessary
-          informations about me.
-        </p>
-        <h2 id="enjoy" class="mb-5">Enjoy !</h2>
-        <!-- Bouttons -->
-        <div id="bouttons" class="d-flex flex-row w-75 justify-content-between mx-auto mt-5 mt-lg-0">
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <div class="button">Learn More</div>
-          </a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <div class="button">Call Now</div>  
-          </a>
-        </div>
-      </article>
+    <button id="nav_button">
+        <img src="navbar/menu.png" alt="menu">
+    </button>
 
-      <!-- Photo -->
-      <div id="photo" class="d-flex flex-column justify-content-center">
-        <img src="pdp.jpg" alt="Photo de Manil">
+    <div id="nav_add">
+        <a class="nav_el" href="#">Home</a>
+        <a class="nav_el" href="#">Projects</a>
+        <a class="nav_el" href="#">Cursus</a>
+        <a class="nav_el" href="#">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Contenu -->
+  <main class="d-lg-flex justify-content-between p-3">
+    <!-- Presentation -->
+    <article class="d-flex flex-column justify-content-center text-center pt-lg-5">
+      <!-- Ecriture -->
+      <h3><em>HELLO</em></h3>
+      <h1>I'm Rabia Manil, a&nbsp;CS&nbsp;Student.</h1>
+      <p>This is my portfolio website, where you will find all the necessary
+        informations about me.
+      </p>
+      <h2 id="enjoy" class="mb-5">Enjoy !</h2>
+      <!-- Bouttons -->
+      <div id="bouttons" class="d-flex flex-row w-75 justify-content-between mx-auto mt-5 mt-lg-0">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          <div class="button">Learn More</div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          <div class="button">Call Now</div>  
+        </a>
       </div>
-      
-    </main>
+    </article>
+
+    <!-- Photo -->
+    <div id="photo" class="d-flex flex-column justify-content-center">
+      <img src="img/pdp.jpg" alt="Photo de Manil">
+    </div>
+    
+  </main>
 <!-- 
     Footer 
     <footer class="w-100 d-flex justify-content-between align-items-center bg-light" style="height:10vh">

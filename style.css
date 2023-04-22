@@ -1,80 +1,25 @@
-/* Nav Bar */
-:root {
-    --marge: 2rem;
-}
 
 @font-face {
     font-family: PoppinsMd;
-    src: url(Poppins/Poppins-Medium.ttf);
+    src: url(fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
     font-family: Pacifico;
-    src: url(Pacifico-Regular.ttf);
+    src: url(fonts/Pacifico-Regular.ttf);
 }
+
+/* Var */
+:root {
+    --beige: #FAEDCD;
+    --vert: #A3B18A;
+    --bleu: #264653;
+}
+
+
 
 body {
     font-family: PoppinsMd;
-}
-
-nav {
-    background-color: #FAEDCD;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-.navbar-brand {
-    margin: 0 40% 0 var(--marge);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: Pacifico;
-    color: #264653;
-}
-
-.navbar-brand:hover {
-    color: black;
-}
-
-.navbar-toggler {
-    margin-right: var(--marge);
-}
-
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 0 !important;
-}
-
-#menu {
-    margin-right: var(--marge);
-}
-
-ul {
-    margin-left: var(--marge);
-}
-
-li {
-    margin: 0 !important;
-    border-top: 2px transparent solid;
-    border-bottom: 2px transparent solid;
-}
-
-li:hover {
-    border-top: 2px #264653 solid;
-    border-bottom: 2px #264653 solid;
-}
-
-#home {
-    padding-top: 0px !important;
-}
-
-.nav-link {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
-
-.nav-item {
-    margin: 1rem 0 0 1rem;
 }
 
 .button {
@@ -98,7 +43,7 @@ a, a:hover {
     text-decoration: none;
 }
 
-img {
+#photo img {
     width: 80vw;
     margin-right: auto !important;
     margin-left: auto !important;
@@ -107,9 +52,6 @@ img {
 
 /* PC */
 @media (min-width: 992px) {
-    nav {
-        height: 10vh;
-    }
     main {
        height: 90vh;
        margin-right: 5vw;
@@ -118,7 +60,7 @@ img {
     article {
         width: 40vw !important;
     }
-    img {
+    #photo img {
         width: 32vw;
         height: auto;
         
@@ -129,9 +71,6 @@ img {
 
 /* Mobile */
 @media (max-width: 992px) {
-    nav {
-        height: 8vh;
-    }
     body {
         padding-bottom: 2vh;
     }
@@ -142,7 +81,7 @@ img {
         padding-top: 0;
 
     }
-    img {
+    #photo img {
         width: 80vw;
         max-width: 400px;
         height: auto;

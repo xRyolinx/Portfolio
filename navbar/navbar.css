@@ -1,0 +1,79 @@
+/* Fonts */
+@font-face {
+    font-family: PoppinsMd;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+/* Var */
+:root {
+    --beige: #FAEDCD;
+    --vert: #A3B18A;
+    --bleu: #264653;
+}
+
+
+
+/* Nav */
+nav {
+    height:8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem 0 1.25rem;
+    background-color: var(--beige);
+}
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 1rem 0 1rem;
+    }
+}
+
+
+/* Suite de navbar */
+#nav_add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+    height: auto;
+}
+/* Mobile */
+@media (max-width: 768px) {
+    #nav_add {
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 0 0 1rem;
+        width: 100vw;
+        height: 30vh;
+        background-color: var(--beige);
+    }
+}
+
+
+/* Elements de la nav bar */
+#nav_marque {
+    font-family: Pacifico;
+}
+
+.nav_el, #nav_marque {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Bouton */
+#nav_button {
+    border: none;
+    padding: 0;
+    background-color: inherit;
+}
+#nav_button img {
+    width:30px;
+    border: none;
+}
