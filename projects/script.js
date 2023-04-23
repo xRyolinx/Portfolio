@@ -3,7 +3,13 @@ function reset(nb) {
     let element = document.querySelector('.element');
     let main_style = document.querySelector('main').style;
 
-    if ((window.matchMedia("(max-width: 830px)").matches))
+    if ((window.matchMedia("(max-width: 600px)").matches))
+    {
+        main_style.gridTemplateColumns = '40vw';
+        element.style.width = '40vw';
+        element.style.height = '60vw';
+    }
+    else if ((window.matchMedia("(max-width: 830px)").matches))
     {
         main_style.gridTemplateColumns = '30vw 30vw';
         element.style.width = '30vw';
