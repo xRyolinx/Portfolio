@@ -8,6 +8,7 @@ function reset(nb) {
         main_style.gridTemplateColumns = '60vw';
         element.style.width = '60vw';
         element.style.height = '100vw';
+        main_style.rowGap = '10vw';
     }
     else if ((window.matchMedia("(max-width: 830px)").matches))
     {
@@ -54,11 +55,20 @@ function add_el(nb) {
         new_element.id = 'n' + (i + nb);
         main.append(new_element);
     }
-    return 4;
 }
 //-----------------------------//
+
+//Global starting elements
 let nb_elements = 8;
+
+//Start
 document.addEventListener('DOMContentLoaded', function() {
+    //Starting element of global
+    if ((window.matchMedia("(max-width: 1024px)").matches))
+    {
+        nb_elements = 4;
+    }
+
     //Clone object
     reset(nb_elements);
 
@@ -67,7 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Voir plus
     document.querySelector('#plus').addEventListener('click', function(event){
-        nb_elements += add_el(nb_elements);
+        add_el(nb_elements);
+        nb_elements += 4;
         event.preventDefault();
     });
 });
