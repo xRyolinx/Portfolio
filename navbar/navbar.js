@@ -4,12 +4,14 @@
 function show_hide_nav()
 {
     //Hide - Show
+    let nav = document.querySelector('nav');
     let nav_add = document.querySelector('#nav_add');
     let nav_button = document.querySelector('#nav_button');
 
     // Hide add on mobile
     if (window.matchMedia("(max-width: 992px)").matches)
     {
+        nav.after(nav_add);
         nav_add.style.display = 'none';
         nav_button.style.display = 'block';
     }
@@ -87,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (nav_bar_counter % 2 == 0)
         {
             //Suite de navbar
-            nav.after(nav_add);
             nav_add.style.display = 'flex';
             nav_bar_counter++;
         }

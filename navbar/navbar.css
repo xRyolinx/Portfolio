@@ -12,6 +12,7 @@
 /* Var */
 :root {
     --beige: #FAEDCD;
+    --beige_fonce: #E9DCBC;
     --vert: #A3B18A;
     --bleu: #264653;
 }
@@ -25,7 +26,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1.25rem 0 1.25rem;
+    padding: 0 3rem 0 2rem;
     background-color: var(--beige);
 }
 /* Mobile */
@@ -41,17 +42,22 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50vw;
+    width: 45vw;
     height: auto;
 }
+
 /* Mobile */
 @media (max-width: 992px) {
     #nav_add {
         flex-direction: column;
         justify-content: space-between;
         padding: 0 0 0 1.1rem;
-        width: 100vw;
+        width: 100%;
+        min-height: 180px;
         background-color: var(--beige);
+        border-top: 2px solid var(--beige_fonce);
+        border-bottom: 2px solid var(--beige_fonce);
+        position: absolute;
     }
 }
 
