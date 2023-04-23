@@ -35,7 +35,7 @@ function nav_element_color(element, color) {
 function nav_element_page(color) {
     let window_path_name = window.location.pathname;
     // Home page
-    if (window_path_name == '/')
+    if ((window_path_name == '/') || (window_path_name == '/index.html'))
     {
         nav_home = document.querySelector('#nav_home');
         nav_element_color(nav_home, color);
@@ -44,7 +44,7 @@ function nav_element_page(color) {
     // Autre pages
     pages = document.querySelectorAll('.nav_el');
     pages.forEach(page => {
-        if ((window_path_name.includes(page.firstChild.innerHTML))
+        if ((window_path_name.includes(page.innerHTML.toLowerCase()))
         && page.id != 'nav_home')
         {
             nav_element_color(page, color);
@@ -56,10 +56,12 @@ function nav_element_page(color) {
 //Change la couleur du link de la page actuelle
 function adapt_element_page_size()
 {
+    // Mobile
     if (window.matchMedia("(max-width: 992px)").matches)
     {
         nav_element_page('transparent');
     }
+    // PC
     else
     {
         nav_element_page('#264653');

@@ -1,0 +1,23 @@
+
+@font-face {
+    font-family: PoppinsMd;
+    src: url(fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+
+/* Var */
+:root {
+    --beige: #FAEDCD;
+    --vert: #A3B18A;
+    --bleu: #264653;
+}
+
+
+
+body {
+    font-family: PoppinsMd;
+}
