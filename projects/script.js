@@ -5,9 +5,9 @@ function reset(nb) {
 
     if ((window.matchMedia("(max-width: 600px)").matches))
     {
-        main_style.gridTemplateColumns = '40vw';
-        element.style.width = '40vw';
-        element.style.height = '60vw';
+        main_style.gridTemplateColumns = '60vw';
+        element.style.width = '60vw';
+        element.style.height = '100vw';
     }
     else if ((window.matchMedia("(max-width: 830px)").matches))
     {
@@ -26,7 +26,7 @@ function reset(nb) {
     {
         main_style.gridTemplateColumns = '20vw 20vw 20vw 20vw';
         element.style.width = '20vw';
-        element.style.height = '30vw';
+        element.style.height = '32vw';
 
     }
     
