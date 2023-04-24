@@ -114,15 +114,13 @@ main {
 
 
 /* Contenu de boite */
-.element div {
-    display: flex;
-    justify-content: space-between;
-}
-
 /* Image, date et titre */
 .el_top {
     height: 65%;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .el_top img {
@@ -140,11 +138,25 @@ main {
 /* Description */
 .el_txt {
     height: 35%;
-    flex-direction: row;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
     padding: 0.5rem;
     font-size: small;
+}
+
+.separator {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.separator hr {
+    margin-bottom: 0 auto;
+    border: 1px solid var(--bleu);
+    text-align: center;
 }
 
 
