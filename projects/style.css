@@ -21,6 +21,7 @@ body {
     font-family: PoppinsMd;
 }
 
+/* Title: Projects */
 header {
     height: 20vh;
     background-image: url(../img/backgr.jpg);
@@ -33,13 +34,21 @@ header {
 header h1 {
     margin: 0;
 }
+/* Mobile */
+@media (max-width: 600px) {
+    header {
+        height: 15vh;
+    }
+}
 
 
+/* Les boites */
 main {
     display: grid;
     justify-content: space-around;
     justify-items: center;
-    grid-template-columns: 20vw 20vw 20vw 20vw;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
 
     padding: 3rem;
     padding-bottom: 2rem;
@@ -47,24 +56,74 @@ main {
     column-gap: 3vw;
     row-gap: 5vw;
     width: 100%;
-    
 }
-
-.element {
+.element, .element:hover {
+    aspect-ratio: 1 / 1.5;
     width: 20vw;
-    height: 30vw;
 
+    text-decoration: none;
+    color: var(--bleu);
     text-align: center;
+    transition: width 0.5s;
+
+
     background-color: var(--beige);
 }
+.element:hover {
+    width: 22vw;
+}
 
+/* 3 par ligne */
+@media (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .element {
+        width: 25vw;
+    }
+    .element:hover {
+        width: 27vw;
+    }
+}
+
+/* 2 par ligne */
+@media (max-width: 830px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .element {
+        width: 35vw;
+    }
+    .element:hover {
+        width: 38vw;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10vw;
+    }
+    .element {
+        width: 65vw;
+    }
+    .element:hover {
+        width: 70vw;
+    }
+}
+
+
+
+/* La boite */
 .element div {
     display: flex;
     justify-content: space-between;
 }
 
+/* Image, date et titre */
 .el_top {
-    height: 60%;
+    height: 65%;
     flex-direction: column;
 }
 
@@ -76,8 +135,9 @@ main {
     font-size: small;
 }
 
+/* Description */
 .el_txt {
-    height: 40%;
+    height: 35%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -85,22 +145,12 @@ main {
     font-size: small;
 }
 
-#plus, #plus p {
+
+
+/* Voir plus */
+#div_plus, #plus {
     margin-bottom: 2rem;
     text-align: center;
     color: var(--vert);
     text-decoration: none;
-}
-
-footer {
-    width: 100%;
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bleu);
-}
-
-footer p {
-    margin: 0;
 }
