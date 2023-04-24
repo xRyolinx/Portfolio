@@ -65,12 +65,16 @@ footer p {
 /* Mobile */
 @media (max-width: 600px) {
     footer {
+        height: 8vh;
         padding: 0 2vw;
     }
     #copyright {
         text-align: center;
     }
     #social {
-        max-width: 250px;
+        max-width: 150px;
+    }
+    #social img {
+        height: 4vh;
     }
 }
