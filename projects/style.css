@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: PoppinsMd;
-    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+    src: url(/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
     font-family: Pacifico;
-    src: url(../fonts/Pacifico-Regular.ttf);
+    src: url(/fonts/Pacifico-Regular.ttf);
 }
 
 /* Var */
@@ -58,14 +58,15 @@ main {
     width: 100%;
 }
 .element, .element:hover {
-    aspect-ratio: 1 / 1.5;
     width: 20vw;
+    aspect-ratio: 1 / 1.5;
+    border-radius: 5%;
 
     text-decoration: none;
     color: var(--bleu);
     text-align: center;
-    transition: width 0.5s;
 
+    transition: width 0.5s;
 
     background-color: var(--beige);
 }
@@ -105,17 +106,14 @@ main {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 10vw;
     }
-    .element {
+    .element, .element:hover{
         width: 65vw;
-    }
-    .element:hover {
-        width: 70vw;
     }
 }
 
 
 
-/* La boite */
+/* Contenu de boite */
 .element div {
     display: flex;
     justify-content: space-between;
@@ -125,6 +123,10 @@ main {
 .el_top {
     height: 65%;
     flex-direction: column;
+}
+
+.el_top img {
+    border-radius: 5% 5% 0 0;
 }
 
 .el_top h3 {

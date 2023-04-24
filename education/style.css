@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: PoppinsMd;
-    src: url(fonts/Poppins/Poppins-Medium.ttf);
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
     font-family: Pacifico;
-    src: url(fonts/Pacifico-Regular.ttf);
+    src: url(../fonts/Pacifico-Regular.ttf);
 }
 
 /* Var */
