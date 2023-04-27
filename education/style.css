@@ -59,6 +59,7 @@ main {
 }
 
 .scolaire, .formation {
+    box-shadow: 5px 5px 20px rgba(77, 77, 77, 0.473);
     margin: 2rem auto;
     width: 40%;
     height: 80%;

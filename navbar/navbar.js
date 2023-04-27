@@ -26,7 +26,7 @@ function show_hide_nav()
 
 //Changer couleur de bordure top/bot
 function nav_element_color(element, color) {
-    element.style.borderTopColor = color;
+    // element.style.borderTopColor = color;
     element.style.borderBottomColor = color;    
     element.style.color = '#264653';
 }
