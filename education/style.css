@@ -59,7 +59,7 @@ main {
 }
 
 .scolaire, .formation {
-    box-shadow: 5px 5px 20px rgba(77, 77, 77, 0.473);
+    box-shadow: 6px 6px 10px rgba(77, 77, 77, 0.473);
     margin: 2rem auto;
     width: 40%;
     height: 80%;
@@ -67,7 +67,7 @@ main {
     padding: 1rem 3rem;
     border-radius: 5%;
 
-    background-color: var(--beige);
+    /* background-color: var(--beige); */
 }
 @media (max-width: 1000px) {
     .scolaire, .formation {
